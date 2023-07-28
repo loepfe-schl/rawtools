@@ -96,3 +96,16 @@ of uint16. Let's convert this hex strings to numbers:
 ...]
 
 ```
+
+### Tipps and Tricks
+
+The command line is a powerful environment with a lot of tools already written
+and tested by very clever people. Here are a few ideas:
+
+* compress your data:
+    * use ```bzip2``` to gain a factor of ~10 in size
+    * replace ```cat mydata.raw``` with ```bzcat mydata.raw.bz2``` above
+* save intermediate results (e.g., COBS-decoded data) to file: use ```tee```
+* use ```head``` and ```tail``` if you just need the start or the end of
+  the available data
+
