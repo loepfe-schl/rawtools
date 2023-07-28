@@ -9,7 +9,7 @@ rawtools
 __version__ = '0.1'
 
 # import every function, class, etc. that should be visible in the package
-from .cobs_decode import *
+from .rawtools import *
 
-del cobs_decode
+del rawtools
 del utils
